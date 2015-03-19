@@ -1,0 +1,11 @@
+<ion-view view-title="Home">
+  <ion-content>
+    <h1>Live Estimation Poker</h1>
+
+    <ion-list>
+      <ion-item ng-repeat="room in rooms.collection" href="#/app/room/{{room.token}}">
+        {{room.token}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
